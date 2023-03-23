@@ -22,7 +22,7 @@ app = Client(
 
 # @app.on_message()
 # async def my_handler(client, message):
-#     await client.send_message(message.chat.id, "Your message has been forwarded to me.")
+#     await client.send_message(messacd /mge.chat.id, "Your message has been forwarded to me.")
 #     await message.reply_text("Hello")
 
 def is_owner(client, message):
@@ -32,7 +32,7 @@ def is_owner(client, message):
         allowed = True
     return allowed
 
-@app.on_message(filters.command)
+@app.on_message(filters.command("start"))
 async def start_command(client, message):
     if(is_owner(client, message)):
         await message.reply_text("Hello!")
@@ -43,7 +43,7 @@ async def start_command(client, message):
 async def handle_file_upload(client, message):
     if(is_owner(client, message)):
         try:
-            file_path = client.download_media(message.document)
+            file_path = await client.download_media(message.document)
             files = {upload_file_key: open(file_path, 'rb')}
             data = {secret_key: secret_value}
             r = requests.post(url, files=files, data=data)
