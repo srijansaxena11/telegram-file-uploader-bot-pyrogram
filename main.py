@@ -44,6 +44,7 @@ async def handle_file_upload(client, message):
     if(is_owner(client, message)):
         try:
             file_path = await client.download_media(message.document)
+            await message.reply_text("File downloaded successfully. Now uploading to server.")
             files = {upload_file_key: open(file_path, 'rb')}
             data = {secret_key: secret_value}
             r = requests.post(url, files=files, data=data)
