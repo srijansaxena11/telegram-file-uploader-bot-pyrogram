@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.handlers import MessageHandler, CommandHandler
+# from pyrogram.handlers import MessageHandler, CommandHandler
 import requests
 import os
 
@@ -32,13 +32,15 @@ def is_owner(client, message):
         allowed = True
     return allowed
 
-def start_command(client, message):
+@app.on_message(filters.command)
+async def start_command(client, message):
     if(is_owner(client, message)):
-        message.reply_text("Hello!")
+        await message.reply_text("Hello!")
     else:
-        message.reply_text("You are not the owner.")
+        await message.reply_text("You are not the owner.")
 
-def handle_file_upload(client, message):
+@app.on_message(filters.document)
+async def handle_file_upload(client, message):
     if(is_owner(client, message)):
         try:
             file_path = client.download_media(message.document)
@@ -46,15 +48,15 @@ def handle_file_upload(client, message):
             data = {secret_key: secret_value}
             r = requests.post(url, files=files, data=data)
             os.remove(file_path)
-            message.reply_text("File uploaded successfully.")
+            await message.reply_text("File uploaded successfully.")
         except Exception as e:
-            message.reply_text("Something went wrong:\n"+str(e))
-            message.reply_text("Backtrace:\n"+str(traceback.format_exc()))
+            await message.reply_text("Something went wrong:\n"+str(e))
+            await message.reply_text("Backtrace:\n"+str(traceback.format_exc()))
     else:
-        message.reply_text("You are not the owner.")
+        await message.reply_text("You are not the owner.")
 
 
-app.add_handler(MessageHandler(handle_file_upload, filters=filters.document))
+# app.add_handler(MessageHandler(handle_file_upload, filters=filters.document))
 # app.add_handler(MessageHandler(is_owner))
-app.add_handler(CommandHandler("start", start_command))
+# app.add_handler(CommandHandler("start", start_command))
 app.run()
