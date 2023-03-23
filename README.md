@@ -24,7 +24,7 @@ Next, you need to edit the config.py file and fill in the following variables:
 
 Finally, you can run the bot.py file using python:
 
-`python bot.py`
+`python main.py`
 
 The bot will start listening for messages from users. To use the bot, users need to send a file to it and wait for a response with the uploaded URL.
 
