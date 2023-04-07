@@ -40,7 +40,7 @@ async def handle_file_upload(client, message):
             await message.reply_text("Downloading the file now.")
             FILE_PATH = await client.download_media(message.document)
             await message.reply_text("File downloaded successfully. Now uploading to server.")
-            r = post(URL, files={"upload_file_key": open(FILE_PATH, "rb")}, data={"secret_key": SECRET_VALUE})
+            r = post(URL, files={UPLOAD_FILE_KEY: open(FILE_PATH, "rb")}, data={SECRET_KEY: SECRET_VALUE})
             remove(FILE_PATH)
             await message.reply_text("File uploaded successfully.")
         except Exception as e:
