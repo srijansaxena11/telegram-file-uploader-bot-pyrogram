@@ -1,0 +1,97 @@
+Keywords
+Head term
+Long tail
+Keywords with intents
+
+tools.seobook.com/general/keyword-density/
+google.com/adwords/
+marketsamurai.com
+
+Meta Tags
+“Meta tags” are easy to add HTML tags that can let the search engines know various details about your website.  They used to be a lot more important to SEO.  With the evolution of Google’s algorithm becoming more advanced all of the time, these tags are valued much less in Google’s analysis of relevance.  However, they remain a very easy way to earn some SEO value.
+
+If you are using Wordpress, consider installing the Yoast SEO plugin.  This plugin will allow you to easily change meta tags and other important attributes.
+
+Title
+The “Title” meta tag is perhaps the most important meta tag for SEO purposes.  When you look at the top of your browser (above the URL box), the text you are seeing is the title tag.  It is also what appears as the link on search engine results pages (SERPs).  Finally, search engines understand that title tags typically explain what each page is about.
+
+You can edit the title of your page in Wordpress with Yoast.  If you are not using Wordpress, a title tag simply looks like
+
+<head>
+
+  <title>Your title goes here</title>
+
+</head>
+
+in HTML.  Note that Google only displays the first 60 characters (including spaces) of your title.  So, make your title count by strategically including keywords that are relevant to your content and which you would like to rank for.  Never make these title tags look spammy.  The search engines want to provide a high quality user experience and anything you do that detracts from that can hurt your rankings.
+
+Meta description
+The meta description is the few sentences below your title on the SERPs.  The most important part of the meta description is to sell the value of your web page to the people searching for your keyword.  By convincing people to click on your site, you also convince the search engines that it is relevant.  However, you need high quality content and a strong user experience once people actually visit your site.  If you have a low quality site and people hit the back button, the search engines will count that against you.
+
+<head>
+
+  <meta name="description" content="Your meta description goes here.">
+
+</head>
+
+Your description should be between 150 to 160 characters.  Keep it to 150 characters at most to be safe.  Treat these 150 characters as your “elevator pitch” to get people to want to click on your page even if it is not already ranked first in the SERPs.  Also consider tastefully including keywords in the description.  These keywords, when searched for by the user, appear in bold text.  People often click on results based on this bolding. 
+
+Site Speed
+Google rarely directly announces what factors it uses to rank websites.  However, the loading speed of your site has been directly mentioned as one such factor.  Try to get your page loading speed down as much as possible to increase your SEO.
+
+If you use Wordpress or another content management system, consider deleting all unnecessary plugins to help improve your speed.  Also consider using Cloudflare which you can use in conjunction with your normal web host to speed up your page.  Cloudflare mirrors and caches your site, and transmits it to your users from its various servers across the world.  It offers a very robust free plan that can make a huge difference in your site speed.  In addition to being a direct ranking factor, user experience is always king in on page SEO.  If your page takes too long to load, people will hit the back button.  That will send another negative message to the search engines that your site should have a lower ranking.
+
+Be Mobile Friendly
+Search engines are increasingly requiring websites perform well for mobile users.  That means pick a responsive theme that works well and looks good on mobile devices.  Avoid difficult popup ads, especially on mobile devices.  If your page fails to load correctly or quickly on the mainstream mobile devices such as the big phones and tablets, you will likely have a harder time ranking.  If you use wordpress, make sure your theme is “responsive” which means it will adapt to your users’ mobile devices when rendering the page.
+
+Sitemaps
+Sitemaps tell search engines where all of the content is on your website.  Search engines are not magical, and they can often miss out on important content that you submit.  If you use Wordpress, you can use the Yoast plugin to automatically update your sitemap.  This is basically a directory with links to every page on your site.  This allows the search engines the ability to see and crawl each piece of your content.
+
+AltaVista
+Keyword stuffing
+Back link
+
+Do follow and no follow
+NoFollow Chrome extension
+NoDoFollow Firefox extension
+
+Help Reporter Help you out method:
+www.helpareporter.com
+Social Proof
+www.prnewsire.com/profnet
+prleads.com
+pitchrate.com
+
+Criticue and Feedback method:
+wwww.suggestionbox.com
+www.conceptfeedback.com
+www.criticue.com
+related:www.website.com
+
+.edu backlinks
+site:.edu "topic" + inurl:links | "other sites" | "resources"
+
+Testimonials
+
+Blogger Reviews
+
+Top 10 blogs method
+
+Directory Submission method
+directory.r-tt.com/Submit_Site
+www.somuch.com/submit-links
+www.directoryworld.net
+www.allthewebsites.org
+www.business.com/directory
+www.familyfriendlysites.com/ffStatipPages.asp?stindex=3
+
+Branding Into Linking:
+Google Alerts
+buzzsumo.com
+meniton.net
+
+bandcamp.com
+reverbnation.com
+youlisten.com
+sutros.com
+
