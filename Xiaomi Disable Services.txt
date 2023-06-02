@@ -1,0 +1,21 @@
+# Disable app
+pm disable-user app.package.name
+# Re-enable it
+pm enable app.package.name
+
+# Uninstall app
+# Sometimes uninstall command may not work without -k option on un-rooted devices
+# -k: Keep the data and cache directories around after package removal. 
+pm uninstall --user 0 app.package.name
+# Install uninstalled system app
+pm install --user 0 $(pm dump app.package.name | awk '/path/{ print $2 }')
+# Another way to install uninstalled system app
+pm install-existing app.package.name
+
+com.miui.yellowpage
+com.miui.android.fashiongallery
+com.miui.bugreport
+com.xiaomi.joyose
+com.miui.daemon
+com.miui.miservice
+com.miui.hybrid.accessory
